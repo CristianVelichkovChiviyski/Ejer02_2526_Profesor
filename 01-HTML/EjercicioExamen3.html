@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario Examen</h1>
+    <form>
+        <fieldset>
+            <legend>DATOS</legend>
+            <br>
+            <select name="opcion" id="opción">
+                <option value="00"> -seleccionar- </option>
+                <option value="01">Opción 1</option>
+                <option value="02">Opción 2</option>
+                <option value="03">Opción 3</option>
+                <option value="04">Opción 4</option>
+                <option value="05">Opción 5</option>
+            </select>
+            <br><br>
+            <label for="mensaje">Explicación:</label>
+            <textarea id="mensaje" name="mensaje" rows="20" cols="50"> </textarea>
+            <br><br>
+            <label>Respuesta:</label>
+            <input type="radio" id="opcion1" name="opcion" value="1">
+            <label for="opcion1">A</label>
+            <input type="radio" id="opcion2" name="opcion" value="2">
+            <label for="opcion2">B</label>
+            <input type="radio" id="opcion3" name="opcion" value="3" checked>
+            <label for="opcion3">C</label>
+            <br><br>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
