@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Datos</legend>
+    
+    <form>
+        <label for="Lenguajes"><b>Lenguajes de Programación</b></label>
+        <select id="Lenguajes" name="Lenguajes" multiple required>
+            <option value="HTML">HTML</option>
+            <option value="Java">Java</option> 
+            <option value="C++">C++</option>
+        </select>
+        <br><br>
+        <label><b>Dispositivo Favorito</b></label>
+        <input type="radio" id="ordenador" name="dispositivo" value="ordenador" checked required>
+        <label for="ordenador">Ordenador</label>            
+        <input type="radio" id="portatil" name="dispositivo" value="portatil" required>
+        <label for="portatil">Portatil</label>
+        <br><br>
+        <input type="submit" value="Enviar"><input type="reset" value="Borrar datos">
+    </form>
+</fieldset>
+</body>
+</html>

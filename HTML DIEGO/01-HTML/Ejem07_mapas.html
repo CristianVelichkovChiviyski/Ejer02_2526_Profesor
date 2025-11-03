@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--El mapa es una especie de hipervinculo que se activa al pinchar en una zona concreta de una zona-->
+    <img src="https://gregoriofer.com/logo.jpg" alt="" usemap="#mapa_gf">
+    <!--El usemap es el atributo que indica que la imagen tiene un mapa asociado, el valor es el nombre del mapa precedido de #-->
+
+    <map name="mapa_gf"><!--El nombre del mapa-->
+        <!--<area shape="rect" coords="0,0,100,100" href="https://gregoriofer.com" alt="Logo Gregorio Fernández"> -->
+        <!--El area es la zona que se activa al pinchar en ella, el shape es la forma de la zona, coords son las coordenadas de la zona, href es el enlace al que va y alt es el texto alternativo-->
+        <!--<area shape="circle" coords="41,56,20" href="https://youtube.com/gregoriofer" alt="Canal de Youtube">-->
+        <area shape="poly" coords="43,31,96,12,73,83,22,105,23,53" href="https://www.google.es" alt="Google">
+    </map>
+    Ejemplo de lo que antes era iframe:
+    <object data="https://gregoriofer.com" width="300" height="300" type="text/html"><!--El object es un contenedor que puede contener cualquier tipo de contenido, en este caso una página web-->
+      
+
+    </object>
+
+
+<!--iframe no se usa, no se puede usar en el examen-->
+</body>
+</html>

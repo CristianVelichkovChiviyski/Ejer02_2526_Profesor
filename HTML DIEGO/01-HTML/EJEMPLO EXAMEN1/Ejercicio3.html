@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="Dias">Dia de la semana:</label>
+            <select id="Dia" name="Dia" required>
+                <option value="">--Selecciona--</option>
+                <option>Lunes</option>
+                <option>Martes</option>
+                <option>Miércoles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+                <option>Sábado</option>
+                <option>Domingo</option>
+            </select>
+            <br><br>
+            <label for="texto">Mensaje:</label>
+            <br>
+            <textarea id="texto" name="texto" rows="20" cols="50" placeholder="Completa el formulario"></textarea>
+            <br><br>
+            <label> Elige entre estas opciones del dia</label>
+            <input type="radio" id="am" name="dia" value="mañana">
+            <label for="mañana">Mañana</label>
+            <input type="radio" id="pm" name="dia" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="night" name="dia" value="noche" checked>
+            <label for="noche">Noche</label>
+            <br><br>
+            <input type="submit" value="Guardar cambios"><input type="reset" value="Borrar los datos introducidos">
+        </fieldset>
+    </form>
+</body>
+</html>
