@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action="url_del_servidor.php" method="post">
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+       <label for="nombre">Nombre:</label> 
+         <input type="text" id="nombre" name="nombre" required value="Dato por defecto">
+        <br>
+        <label for="edad">Edad:</label> 
+         <input type="number" id="edad" name="edad" min="0" >
+        <br>
+        <label for="email">Correo Electrónico:</label> 
+         <input type="email" id="email" name="email" placeholder="Introduce tu email" >
+        <br>
+        <label for="ColorFavorito">Color Favorito</label>
+         <input type="color" id="ColorFavorito" name="ColorFavorito" >
+        <br>
+        <input type="hidden" name="token" value="1234567890">
+        
+        <br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <br>
+        <label for="horaContacto">Hora de Contacto:</label>
+            <input type="time" id="horaContacto" name="horaContacto">
+            <br>
+
+            <label for="ciudadNacimiento">Ciudad de Nacimiento:</label>
+            <select id="ciudadNacimiento" name="ciudadNacimiento" multiple><!-- El multiple sirve para seleccionar varias opciones-->
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+                <option value="sevilla">Sevilla</option>
+            </select>
+            <br>
+
+        <label>Género:</label>
+        <input type="radio" id="generoHombre" name="genero" value="hombre">
+        <label for="generoHombre">Hombre</label>            
+        <input type="radio" id="generoMujer" name="genero" value="mujer"><!-- El name debe ser el mismo para que solo se pueda seleccionar uno-->
+        <label for="generoMujer">Mujer</label>
+            <br>
+         <label for="deporte_favorito">Deporte Favorito:</label>
+         <input type="checkbox" id="futbol" name="deporte_favorito" value="futbol">
+         <label for="futbol">Fútbol</label>
+         <input type="checkbox" id="baloncesto" name="deporte_favorito" value="baloncesto">
+         <label for="baloncesto">Baloncesto</label>
+         <input type="checkbox" id="tenis" name="deporte_favorito" value="tenis">
+         <label for="tenis">Tenis</label>
+            <br>  
+         <label for="web">Página Web Personal:</label><!-- Sirve para crear un cuadro en donde poner la url-->
+            <input type="url" id="web" name="web" placeholder="https://">
+            <br>   
+           <label for="telefono">Teléfono:</label><!-- Sirve para crear un cuadro en donde poner el teléfono-->
+            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+            <br> 
+            <label for="archivo">Subir Archivo:</label><!-- Sirve para subir un archivo-->
+            <input type="file" name="archivo" id="archivo">
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" ><!-- Sirve para poner una contraseña, los caracteres se ven como puntos-->
+            <br>
+            
+            <input type="reset" value="Borrar"><!-- Botón para borrar los datos del formulario-->
+            <br>
+
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50">Este texto sale en el cuadro</textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Pulse para enviar">
+    </form>
+
+</body>
+</html>
